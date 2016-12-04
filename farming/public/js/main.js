@@ -95,11 +95,23 @@ $(document).ready(function () {
     });
 
   $('.hexagon').each(function(index, obj) {
-    console.log("hallooooo");
     $(obj).on('click', function(event) {
-      console.log("lalalallala");
-      $('#field-name').html($(obj).attr('id'));
-      $('#field-data').html('Auf diesem Feld wächst Mais');
+      var $new = $(obj).find($('.field-values'));
+
+      $('#field-name').html($('#field-' + (index+1)).text());
+
+      switch($new.text()) {
+            case '0':
+                $('#field-crop').attr('src', '../images/Mais.png');
+                break;
+            case '1':
+                $('#field-crop').attr('src', '../images/Weizen.png');
+                break;
+            case '2':
+                $('#field-crop').attr('src', '../images/Bohnen.png');
+                break;
+          }
+
       $info.modal({show: true});
     });
   });

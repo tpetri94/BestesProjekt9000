@@ -53,25 +53,33 @@
       <div class="hexes-1 column">
         <a class="hex">
           <div class="wrapper">
-            <div class="hexagon color-1"></div>
+            <div class="hexagon color-1">
+              <div class="field-values hidden">1</div>
+            </div>
           </div>
           <span id="field-1" class="content"> <small>Feld 1</small> </span>
         </a>
         <a class="hex">
           <div class="wrapper">
-            <div class="hexagon color-1"></div>
+            <div class="hexagon color-1">
+              <div class="field-values hidden">1</div>
+            </div>
           </div>
           <span id="field-2" class="content"> <small>Feld 2</small> </span>
         </a>
         <a class="hex">
           <div class="wrapper">
-            <div class="hexagon color-1"></div>
+            <div class="hexagon color-1">
+              <div class="field-values hidden">0</div>
+            </div>
           </div>
           <span id="field-3" class="content"> <small>Feld 3</small> </span>
         </a>
         <a class="hex">
           <div class="wrapper">
-            <div class="hexagon color-1"></div>
+            <div class="hexagon color-1">
+              <div class="field-values hidden">0</div>
+            </div>
           </div>
           <span id="field-4" class="content"> <small>Feld 4</small> </span>
         </a>
@@ -79,25 +87,33 @@
       <div class="hexes-2 column">
         <a class="hex">
           <div class="wrapper">
-            <div class="hexagon color-1"></div>
+            <div class="hexagon color-1">
+              <div class="field-values hidden">1</div>
+            </div>
           </div>
           <span id="field-5" class="content"> <small>Feld 5</small> </span>
         </a>
         <a class="hex">
           <div class="wrapper">
-            <div class="hexagon color-1"></div>
+            <div class="hexagon color-1">
+              <div class="field-values hidden">2</div>
+            </div>
           </div>
           <span id="field-6" class="content"> <small>Feld 6</small> </span>
         </a>
         <a class="hex">
           <div class="wrapper">
-            <div class="hexagon color-1"></div>
+            <div class="hexagon color-1">
+              <div class="field-values hidden">2</div>
+            </div>
           </div>
           <span id="field-7" class="content"> <small>Feld 7</small> </span>
         </a>
         <a class="hex">
           <div class="wrapper">
-            <div class="hexagon color-1"></div>
+            <div class="hexagon color-1">
+              <div class="field-values hidden">1</div>
+            </div>
           </div>
           <span id="field-8" class="content"> <small>Feld 8</small> </span>
         </a>
@@ -105,25 +121,33 @@
       <div class="hexes-3 column">
         <a class="hex">
           <div class="wrapper">
-            <div class="hexagon color-1"></div>
+            <div class="hexagon color-1">
+              <div class="field-values hidden">1</div>
+            </div>
           </div>
           <span id="field-9" class="content"> <small>Feld 9</small> </span>
         </a>
         <a class="hex">
           <div class="wrapper">
-            <div class="hexagon color-1"></div>
+            <div class="hexagon color-1">
+              <div class="field-values hidden">0</div>
+            </div>
           </div>
           <span id="field-10" class="content"> <small>Feld 10</small> </span>
         </a>
         <a class="hex">
           <div class="wrapper">
-            <div class="hexagon color-1"></div>
+            <div class="hexagon color-1">
+              <div class="field-values hidden">2</div>
+            </div>
           </div>
           <span id="field-11" class="content"> <small>Feld 11</small> </span>
         </a>
         <a class="hex">
           <div class="wrapper">
-            <div class="hexagon color-1"></div>
+            <div class="hexagon color-1">
+              <div class="field-values hidden">2</div>
+            </div>
           </div>
           <span id="field-12" class="content"> <small>Feld 12</small> </span>
         </a>
@@ -131,25 +155,33 @@
       <div class="hexes-4 column">
         <a class="hex">
           <div class="wrapper">
-            <div class="hexagon color-1"></div>
+            <div class="hexagon color-1">
+              <div class="field-values hidden">1</div>
+            </div>
           </div>
           <span id="field-13" class="content"> <small>Feld 13</small> </span>
         </a>
         <a class="hex">
           <div class="wrapper">
-            <div class="hexagon color-1"></div>
+            <div class="hexagon color-1">
+              <div class="field-values hidden">0</div>
+            </div>
           </div>
           <span id="field-14" class="content"> <small>Feld 14</small> </span>
         </a>
         <a class="hex">
           <div class="wrapper">
-            <div class="hexagon color-1"></div>
+            <div class="hexagon color-1">
+              <div class="field-values hidden">0</div>
+            </div>
           </div>
           <span id="field-15" class="content"> <small>Feld 15</small> </span>
         </a>
         <a class="hex">
           <div class="wrapper">
-            <div class="hexagon color-1"></div>
+            <div class="hexagon color-1">
+              <div class="field-values hidden">1</div>
+            </div>
           </div>
           <span id="field-16" class="content"> <small>Feld 16</small> </span>
         </a>
@@ -161,16 +193,31 @@
     <div class="modal fade" id="modal-info" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
-        <div class="modal-header">
-          <h4 id="field-name"><h4>
+          <div class="modal-header">
+            <img id="field-crop" src="" width="75px" height="75px">
+            <h4 id="field-name" style="padding-left: 20px;"></h4>
+          </div>
+          <div id="field-data" class="modal-body">
+            <!-- USER FIELD DATA -->
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
-        <div id="field-data" class="modal-body">
-          <!-- USER FIELD DATA -->
+      </div>
+    </div>
+  </section>
+
+  <section class="optimization">
+    <div class="panel panel-info">
+      <div class="panel-body">
+        <h4>Optimization</h4>
+        <div id="opt-text">
+          <div class="hidden"><%= title %></div>
         </div>
-        <div class="modal-footer">
-          <button class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-        </div>
+      </div>
+      <div class="panel-footer">
+        <button class="btn btn-default">Close</button>
       </div>
     </div>
   </section>

@@ -34,6 +34,28 @@ pre {
 	border-radius: 10px;
 }
 
+#field-crop {
+	border: none;
+}
+
+.modal-header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.optimization {
+	position: absolute;
+	width: 25%;
+	right: 0;
+	margin: 10px;
+}
+
+.panel-footer {
+	display: flex;
+	justify-content: flex-end;
+}
+
 .row {
 	display: flex;
 	justify-content: flex-end;
