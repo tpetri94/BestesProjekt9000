@@ -39,17 +39,22 @@ $(document).ready( function() {
           var $crop = $('#field-desc > img');
           var $crop_name = $('#field-desc > span');
 
-          switch($(obj + ' > .field-values').text()) {
+          switch($(obj).find('.field-values').text()) {
             case '0':
-                $crop_name.text('Mais');
-                $crop.attr('src', '../images/mais.png');
+                $crop_name.text($('#field-' + (index+1)).text());
+                $crop.attr('src', '../images/Mais.png');
+                break;
             case '1':
-                $crop_name.text('Weizen');
-                $crop.attr('src', '../images/weizen.png');
+                $crop_name.text($('#field-' + (index+1)).text());
+                $crop.attr('src', '../images/Weizen.png');
+                break;
             case '2':
-                $crop_name.text('Rüben');
-                $crop.attr('src', '../images/rueben.png');
+                $crop_name.text($('#field-' + (index+1)).text());
+                $crop.attr('src', '../images/Bohnen.png');
+                break;
           }
+
+          $('.crop-rot > .form-control').prop('selectedIndex', 0);
       });
     });
 

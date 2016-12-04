@@ -242,10 +242,14 @@ body {
 
 #field-desc {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
   margin-bottom: 10px;
+}
+
+#field-desc > * {
+  padding-right: 10px;
 }
 
 #fields-mini {
