@@ -1,0 +1,305 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #333;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #FFF;
+}
+
+body {
+  color: #000;
+  font-family: 'The Girl Next Door', cursive;
+  text-align: center;
+}
+
+/* Custom default button */
+#start-button,
+#start-button:focus {
+  color: #000;
+  border: 1px solid #000;
+  padding: 50px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-radius: 100px;
+  font-size: 30px;
+  background-color: #FFF;
+}
+
+#start-button:hover {
+  color: #FFF;
+  background-color: rgba(161, 161, 161, 0.75);
+  border: 1px solid #FFF;
+}
+
+#watson {
+  border-radius: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px transparent;
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+}
+
+#inventory {
+  width: 50%;
+}
+
+#machine-categories {
+  width: 50%;
+}
+
+#login-nav {
+  position: absolute;
+  right: 10px;
+}
+
+.machine {
+  width: 160px;
+  height: 110px;
+  padding: 0px;
+}
+
+.cat {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+
+.category {
+  width: 160px;
+  height: 110px;
+  border: 1px solid black;
+  padding: 0px;
+}
+
+.category:hover {
+  background-color: lightgray;
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+.site-wrapper-inner {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: url(../images/farming-agrar.jpg) no-repeat center;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.inner > .lead, .inner > h1 {
+  font-weight: bolder;
+}
+
+.desc {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 50px;
+}
+
+/*
+ * Header
+ */
+.masthead-brand {
+  font-size: 250%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.myhead {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  text-align: center;
+  width: 100%;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+  margin-right: 50px;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  text-shadow: 0 1px 5px rgba(0,0,0,.5);
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgb(255,255,255);
+  border-bottom: 2px solid grey;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+
+.modal {
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+#field-view {
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+#field-body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-height: 800px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+#field-data {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+  height: 350px;
+}
+
+#crop-rotation {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+
+.crop-rot {
+  padding-right: 5px;
+}
+
+#field-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#fields-mini {
+  padding: 0;
+  position: relative;
+  width: 50%;
+  height: 350px;
+  margin: 0;
+}
+
+#advanced-data {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgb(255,255,255);
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 0 1px 5px rgba(0,0,0,.5);
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 10px;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}

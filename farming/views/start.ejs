@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Landwirtschaft 9000 - Start Page</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="/stylesheets/start.css" type="text/css" rel="stylesheet">
+  <link href="/stylesheets/fields.css" type="text/css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Give+You+Glory|Kranky|Life+Savers|The+Girl+Next+Door" rel="stylesheet">
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <div class="myhead clearfix">
+     <h3 class="masthead-brand">Landwirtschaft 9000</h3>
+     <nav id="login-nav">
+       <ul class="nav masthead-nav">
+        <!-- TODO: hinzufuegen -->
+        <li><a href="#">login</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
+      <div class="inner cover">
+        <p class="lead">
+          <button id="start-button" class="btn btn-outline-info btn-lg">Start!</button>
+        </p>
+        <div class="desc">
+          <h1 class="cover-heading">This is a page for farming.</h1>
+          <p class="lead">Build your own farm and buy hats!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mastfoot">
+    <p>VON UNS</p>
+    <button id="watson" class="btn btn-default"><img src="../images/question.png" width="35px" height="35px"></button>
+  </div>
+
+  <div id="tutorial">
+    <div class="modal fade" id="modal-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4><span class="glyphicon glyphicon-user"></span> Your Personal Data</h4>
+          </div>
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <label for="usrn"> Username </label>
+                <input type="text" class="form-control" id="usrn" placeholder="Enter username">
+              </div>
+              <div class="form-group">
+                <label for="hof"> Business Name </label>
+                <input type="text" class="form-control" id="hof" placeholder="Enter business name">
+              </div>
+              <div class="form-group">
+                <label for="loc"> Location </label>
+                <input type="text" class="form-control" id="loc" placeholder="Enter location">                            
+              </div>
+              <div class="form-group">
+                <label for="email"> Email Adress </label>
+                <input type="text" class="form-control" id="email" placeholder="Enter email">                           
+              </div>
+              <div class="form-group">
+                <label for="psw"> Password</label>
+                <input type="text" class="form-control" id="psw" placeholder="Enter password">                            
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button id="but-1" class="btn btn-success" data-dismiss="modal">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-2" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4><span class="glyphicon glyphicon-leaf"></span> Crops</h4>
+          </div>
+          <div class="modal-body" id="field-body">
+            <!-- FELDER  -->
+            <section class="container col-lg-6" id="fields-mini">
+              <div class="honeycomb" id="field-view">
+                <div class="hexes-1 column">
+                  <a class="hex">
+                    <div class="wrapper">
+                      <div class="hexagon color-1">
+                        <div class="field-values">1</div>
+                      </div>
+                    </div>
+                    <span id="field-1" class="content"> <small>Feld 1</small> </span>
+                  </a>
+                  <a class="hex">
+                    <div class="wrapper">
+                      <div class="hexagon color-1">
+                        <div class="field-values">1</div>
+                      </div>
+                    </div>
+                    <span id="field-2" class="content"> <small>Feld 2</small> </span>
+                  </a>
+                  <a class="hex">
+                    <div class="wrapper">
+                      <div class="hexagon color-1">
+                        <div class="field-values">0</div>
+                      </div>
+                    </div>
+                    <span id="field-3" class="content"> <small>Feld 3</small> </span>
+                  </a>
+                  <a class="hex">
+                    <div class="wrapper">
+                      <div class="hexagon color-1">
+                        <div class="field-values">0</div>
+                      </div>
+                    </div>
+                    <span id="field-4" class="content"> <small>Feld 4</small> </span>
+                  </a>
+                </div>
+                <div class="hexes-2 column">
+                  <a class="hex">
+                    <div class="wrapper">
+                      <div class="hexagon color-1">
+                        <div class="field-values">1</div>
+                      </div>
+                    </div>
+                    <span id="field-5" class="content"> <small>Feld 5</small> </span>
+                  </a>
+                  <a class="hex">
+                    <div class="wrapper">
+                      <div class="hexagon color-1">
+                        <div class="field-values">2</div>
+                      </div>
+                    </div>
+                    <span id="field-6" class="content"> <small>Feld 6</small> </span>
+                  </a>
+                  <a class="hex">
+                    <div class="wrapper">
+                      <div class="hexagon color-1">
+                        <div class="field-values">2</div>
+                      </div>
+                    </div>
+                    <span id="field-7" class="content"> <small>Feld 7</small> </span>
+                  </a>
+                  <a class="hex">
+                    <div class="wrapper">
+                      <div class="hexagon color-1">
+                        <div class="field-values">1</div>
+                      </div>
+                    </div>
+                    <span id="field-8" class="content"> <small>Feld 8</small> </span>
+                  </a>
+                </div>
+                <div class="hexes-3 column">
+                  <a class="hex">
+                    <div class="wrapper">
+                      <div class="hexagon color-1">
+                        <div class="field-values">1</div>
+                      </div>
+                    </div>
+                    <span id="field-9" class="content"> <small>Feld 9</small> </span>
+                  </a>
+                  <a class="hex">
+                    <div class="wrapper">
+                      <<div class="hexagon color-1">
+                        <div class="field-values">0</div>
+                      </div>
+                    </div>
+                    <span id="field-10" class="content"> <small>Feld 10</small> </span>
+                  </a>
+                  <a class="hex">
+                    <div class="wrapper">
+                      <<div class="hexagon color-1">
+                        <div class="field-values">2</div>
+                      </div>
+                    </div>
+                    <span id="field-11" class="content"> <small>Feld 11</small> </span>
+                  </a>
+                  <a class="hex">
+                    <div class="wrapper">
+                      <div class="hexagon color-1">
+                        <div class="field-values">2</div>
+                      </div>
+                    </div>
+                    <span id="field-12" class="content"> <small>Feld 12</small> </span>
+                  </a>
+                </div>
+                <div class="hexes-4 column">
+                  <a class="hex">
+                    <div class="wrapper">
+                      <div class="hexagon color-1">
+                        <div class="field-values">1</div>
+                      </div>
+                    </div>
+                    <span id="field-13" class="content"> <small>Feld 13</small> </span>
+                  </a>
+                  <a class="hex">
+                    <div class="wrapper">
+                      <div class="hexagon color-1">
+                        <div class="field-values">0</div>
+                      </div>
+                    </div>
+                    <span id="field-14" class="content"> <small>Feld 14</small> </span>
+                  </a>
+                  <a class="hex">
+                    <div class="wrapper">
+                      <div class="hexagon color-1">
+                        <div class="field-values">0</div>
+                      </div>
+                    </div>
+                    <span id="field-15" class="content"> <small>Feld 15</small> </span>
+                  </a>
+                  <a class="hex">
+                    <div class="wrapper">
+                      <div class="hexagon color-1">
+                        <div class="field-values">1</div>
+                      </div>
+                    </div>
+                    <span id="field-16" class="content"> <small>Feld 16</small> </span>
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <div class="col-lg-6" id="field-data">
+              <div id="field-desc">
+                <img id="crop" src="" width="50px" height="50px"><span id="field-name"></span>
+              </div>
+              <label for="crop-rotation">Crop Rotation</label>
+              <div id="crop-rotation">
+                <div class="form-group crop-rot">
+                  <select id="crop-1" class="form-control">
+                    <option>Mais</option>
+                    <option>Weizen</option>
+                    <option>Bohnen</option>
+                  </select>
+                </div>
+                <div class="form-group crop-rot">
+                  <select id="crop-2" class="form-control">
+                    <option>Mais</option>
+                    <option>Weizen</option>
+                    <option>Bohnen</option>
+                  </select>
+                </div>
+                <div class="form-group crop-rot">
+                  <select id="crop-3" class="form-control">
+                    <option>Mais</option>
+                    <option>Weizen</option>
+                    <option>Bohnen</option>
+                  </select>
+                </div>
+              </div>
+              <button class="btn btn-info advanced-toggle">Advanced</button>
+              <div id="advanced-data" class="collapse">
+                <!-- ADVAMCED OPTIONS HERE -->
+                <label for="size">Gr&ouml;sse:</label>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="size" placeholder="500x500">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="but-2" class="btn btn-success" data-dismiss="modal">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-3" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4><span class="glyphicon glyphicon-wrench"></span> Machinery</h4>
+          </div>
+          <div class="modal-body">
+            <div id="inventory" class="col-md-2">
+              <div class="row-md-1 cat machine">
+                <img id="machine-1" src="">
+                <label for="machine-1" id="label1"> </label>
+              </div>
+              <div class="row-md-1 cat machine">
+                <img id="machine-2" src="">
+                <label for="machine-2" id="label2"> </label>
+              </div>
+            </div>
+            <div id="machine-categories" class="col-md-2">
+              <div class="row-md-1 cat">
+                <img id="c1" class="category" src="../images/schwein_schafe.png" width="150px" height="100px">
+                <label for="c1" class="cat-label">Schweine und Schafe</label>
+              </div>
+              <div class="row-md-1 cat">
+                <img id="c2" class="category" src="../images/kuh.png" width="100px" height="100px">
+                <label for="c2" class="cat-label">K&uuml;he</label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="but-3" class="btn btn-success" data-dismiss="modal">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/jquery-3.1.0.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/start.js"></script>
+
+</body>
+</html>
