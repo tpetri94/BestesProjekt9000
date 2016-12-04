@@ -167,9 +167,14 @@ var tradeoff_analytics = watson.tradeoff_analytics({
 	version: 'v1'
 });
 
-var res = {};
+var res = [];
 tradeoff_analytics.dilemmas(data, function(error, resolution) {
-	res = resolution;
+	console.log(resolution);
+	resolution["resolution"]["solutions"].forEach(function(entry){
+		if(entry["status"] == "FRONT"){
+			res.push(entry["solution_ref"]);
+		}
+	});
 });
 
 /* GET home page. */
@@ -178,7 +183,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/main', function(req, res, next) {
-	res.render('main', { title: [rotations, res] });
+	res.render('main', { title: [rotations, res, max] });
 });
 
 router.post('/userdata', function(req, res, next) {
